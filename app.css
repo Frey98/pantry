@@ -1,0 +1,79 @@
+#title {
+    font-family: Lobster, Courier;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+}
+body {
+    /* background-image: url("./images/sealy-pantry-staff.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+}
+.georgia-font {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.cursive-font {
+    font-family: cursive;
+}
+.banner {
+    background-color: rgba(135, 206, 250, 50%);
+}
+.parallax-1 {
+    background-image: url(./images/blueprint.jpeg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#history {
+    background-color: white;
+    height: 500px;
+}
+img {
+    
+}
+/* .nav {
+    display: inline;
+    list-style-type: none;
+    margin: auto;
+}
+.nav a {
+    color: white;
+    font-size: 20px;
+    background-color: burlywood;
+    padding: 10px 30px 10px 30px;
+    margin: 3px;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    text-decoration: none;
+}
+a:hover {
+    color: burlywood;
+    background-color: white;
+}
+#stats {
+    color: white;
+}
+.social {
+    display: inline;
+    list-style-type: none;
+    margin: 10px 10px 0 0;
+}
+#mission {
+    height: 200px;
+    background-color: tan;
+    text-align: center;
+    position: fixed;
+    right: 300px;
+    bottom: 200px;
+}
+ */
+

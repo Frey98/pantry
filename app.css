@@ -1,31 +1,59 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+header {
+    background-image: url(./images/veggies-banner.png);
+    background-position: center;
+    background-size: cover;
+}
 #title {
-    font-family: Lobster, Courier;
+    font-family: Lobster, 'Times New Roman', Courier;
     font-size: 60px;
     color: white;
-    text-align: center;
+    padding-left: 55px;
+    text-align: left;
     text-shadow: -1px 1px 2px #000,
 				  1px 1px 2px #000,
 				  1px -1px 0 #000,
 				  -1px -1px 0 #000;
-}
-body {
-    /* background-image: url("./images/sealy-pantry-staff.jpeg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover; */
+    height: 85px;
 }
 .georgia-font {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', serif;
 }
 .cursive-font {
-    font-family: cursive;
+    font-family: cursive, 'Times New Roman', serif;
 }
 .banner {
-    background-color: rgba(135, 206, 250, 50%);
+    /* background-color: rgba(135, 206, 250, 50%);*/
+    background: linear-gradient(
+        180deg,
+        hsl(37, 92%, 85%),
+        hsl(0, 100%, 85%),
+        hsl(37, 92%, 85%)
+    );
+}
+.events {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 400px;
+}
+.event {
+    width: 30%;
+    text-align: center;
+    border: 2px indigo solid;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+.tu {
+    background-image: url(./images/shelf-with-jars.jpeg);
+    background-size: cover;
 }
 .parallax-1 {
     background-image: url(./images/blueprint.jpeg);
-    min-height: 500px;
+    min-height: 300px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -33,11 +61,21 @@ body {
 }
 #history {
     background-color: white;
+    height: 700px;
+}
+.house {
+    float: left;
+}
+footer {
     height: 500px;
+    background-color: lightblue; 
 }
-img {
-    
+/* .menu {
+    position: sticky;
 }
+.menu-p {
+    position: relative;
+} */
 /* .nav {
     display: inline;
     list-style-type: none;

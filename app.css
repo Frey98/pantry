@@ -6,17 +6,16 @@ header {
     background-position: center;
     background-size: cover;
 }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 #title {
     font-family: Lobster, 'Times New Roman', Courier;
     font-size: 60px;
     color: white;
     padding-left: 55px;
-    text-align: left;
-    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
-    /* text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000; */
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 10px green, 0 0 5px darkgreen;
     height: 85px;
 }
 .georgia-font {
@@ -24,6 +23,9 @@ header {
 }
 .cursive-font {
     font-family: cursive, 'Times New Roman', serif;
+}
+.marcellus-font {
+    font-family: "Marcellus SC", serif;
 }
 /* .banner {
     background-color: rgba(135, 206, 250, 50%);
@@ -34,60 +36,64 @@ header {
         hsl(37, 92%, 85%)
     );
 } */
+/* nav {
+    
+} */
 #mission {
-    background-color: antiquewhite;
+    background-color:snow;
     padding: auto;
+    color: darkgreen;
 }
 .events {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 400px;
+    max-height: 400px;
 }
 .event {
     width: 30%;
     text-align: center;
-    border: 2px indigo solid;
-    border-radius: 10px;
+    border: 3px green solid;
+    border-radius: 20px;
     padding: 40px;
     margin-bottom: 30px;
+    background-color: rgb(130, 215, 188);
 }
-.tu {
-    text-shadow: 3px 3px 5px black;
-    position: relative;
+.day {
+    color: black;
+    font-size: 40px;
+    font-weight: 500;
+    background-color: snow;
+    border-radius: 20px;
 }
-.tu::before {
-    background-image: url(./images/shelf-with-jars.jpeg);
-    background-size: cover;
-    position: absolute;
-    opacity: 0.75;
+.day:hover {
+    transform: scale(1.2);
 }
 .parallax-1 {
-    background-image: url(./images/blueprint.jpeg);
-    min-height: 300px;
+    background-image: url(./images/current/ffa.jpeg);
+    min-height: 800px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #history {
-    background-color: white;
-    height: 700px;
+    background-color: snow;
+    min-height: 700px;
 }
 /* .house {
     float: left;
 } */
 .container {
     display: grid;
-    grid-template-columns: 1fr 20px 1fr;
-    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 1fr 30px 1fr;
+    grid-template-rows: auto;
 }
 .hist1, .hist5, .hist6, .hist9 {
-    border: 3px groove black;
+    border: 3px groove hsl(8, 82%, 78%);
     border-radius: 20px;
-    margin: 1px 30px;
-    padding: 3px;
-
+    padding: 10px;
+    background-color: hsla(8, 82%, 78%, 0.6);
 }
 .hist3, .hist4, .hist7, .hist8 {
     margin: auto;
@@ -96,16 +102,19 @@ header {
 .hist2 {
     grid-column: 2 / 3;
     grid-row: 1 / 5;
-    border: 3px solid black;
+    border: 3px solid hsl(8, 82%, 78%);
     background: linear-gradient(
         180deg,
         hsl(8, 82%, 78%),
-        hsl(260, 3%, 47%),
-        hsl(8, 82%, 78%)
+        hsl(263, 6%, 25%),
+        hsl(8, 82%, 78%),
+        hsl(263, 6%, 25%)
     );
     border-radius: 20px;
 }
-
+.hist3::before {
+    content: "";
+}
 /* .menu {
     position: sticky;
 }

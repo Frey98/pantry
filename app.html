@@ -6,34 +6,35 @@
     <link rel="stylesheet" type="text/css" href="app.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
     <title>Sealy Christian Pantry</title>
   </head>
   <body>
     <header>  
       <h1 id="title" class="pt-2">Sealy Christian Pantry</h1>      
       <nav class="navbar bg-opacity-75 bg-light justify-content-center">
-        <ul class="nav nav-pills nav-fill">
+        <ul class="nav nav-pills nav-fill sticky-top ">
           <li class="nav-item">
-            <a class="nav-link text-black fs-5 fw-bold" href="#">Home</a>
+            <a class="nav-link text-black fs-5 fw-bold" href="#home">Home</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link text-black fs-5 fw-bold" href="#">Announcements</a>
-          </li>
+          </li> -->
           <li class="nav-item">
-            <a class="nav-link text-black fs-5 fw-bold" href="#">Events</a>
+            <a class="nav-link text-black fs-5 fw-bold" href="#events">Events</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link text-black fs-5 fw-bold" href="#">About</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link text-black fs-5 fw-bold" href="#history">History</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-black fs-5 fw-bold" href="#">Volunteers</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link text-black fs-5 fw-bold" href="#">Statistics</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link text-black fs-5 fw-bold" href="#">Challenges</a>
           </li>
@@ -50,38 +51,37 @@
       </nav>
     </header>
     <main>
-      <!-- <div class="container-fluid banner">
-        <p class="text-black text-center fs-1 georgia-font pt-3">Our mission is</p>
-        <blockquote class="text-black text-center fs-1 cursive-font pb-3"><span style="font-size: 80px">"</span>To demonstrate Christian love by providing food to people in need<span style="font-size: 80px; transform: rotate(180);">"</span></blockquote>
-      </div> -->
-      
-      <div class="container-fluid">
-        <div id="mission" class="row">
-          <div class="col text-black text-center ">
-            <p class="georgia-font pt-3 fs-1">Our mission is:</p>
-            <blockquote class="cursive-font pb-3 fs-2"><span style="font-size: 80px">"</span>To demonstrate Christian love<br>by providing food to people in need<span style="font-size: 80px; transform: rotate(180);">"</span></blockquote>
-            <!-- <p>We are a 501c3 non-profit organization that serves the greater Sealy area.</p> -->
-          </div>
-          <div class="col">
-            <img class="img-fluid m-3 rounded mx-auto d-block" src="./images/sealy-pantry-staff.jpeg" alt="Sealy Christian Pantry volunteers" title="Sealy Christian Pantry volunteers" width="700">
+      <section id="home">
+        <div class="container-fluid">
+          <div id="mission" class="row">
+            <div class="col text-center m-auto">
+              <p class="georgia-font pt-0 fs-1 m-auto">Our mission is:</p>
+              <hr>
+              <br>
+              <blockquote class="cursive-font pb-3 fs-1">To demonstrate Christian love<br>by providing food to people in need</blockquote>
+              <!-- <p>We are a 501c3 non-profit organization that serves the greater Sealy area.</p> -->
+            </div>
+            <div class="col">
+              <img class="img-fluid m-3 rounded-3 mx-auto d-block" src="./images/sealy-pantry-staff.jpeg" alt="Sealy Christian Pantry volunteers" title="Sealy Christian Pantry volunteers" width="700">
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <section id="events">
-        <h2 class="text-center m-3">Events</h2>
-        <div class="events fs-4">
-          <div class="event tu text-white">
-            <p>Tuesdays</p>
-            <p>Every other Tuesday food is delivered to residents of Silver Lakes and The Oaks who are unable to pick up food on Wednesdays</p>
+        <h2 class="text-center m-3 marcellus-font" style="font-size: 3.0vw;">~ Events ~</h2>
+        <div class="events" style="font-size: 1.8vw;">
+          <div class="event d-flex flex-column">
+            <p class="day marcellus-font">Tuesdays</p>
+            <p>Every other Tuesday food is delivered to residents of Silver Lakes and The Oaks who are unable to pick up food on Wednesdays.</p>
           </div>
           <div class="event">
-            <p class="we">Wednesdays</p>
-            <p>Every Wednesday from 9 AM to 12 PM, food is distributed to those in need…</p>
+            <p class="day marcellus-font">Wednesdays</p>
+            <p>Every Wednesday from 9 AM to 12 PM at LifeBridge Community Church, food is distributed to those in need.</p>
           </div>
-          <div class="event">
-            <p class="sa">Saturdays</p>
-            <p>Trucks loaded with fresh produce come to Sealy from the Houston Food Bank one Saturday a month to distribute</p>
+          <div class="event d-flex flex-column">
+            <p class="day marcellus-font">Saturdays</p>
+            <p>A produce truck is at LifeBridge Community Church the first Saturday of each month.  Distribution of the produce is from 9 AM - 11 AM.</p>
           </div>
         </div>
       </section>
@@ -89,9 +89,9 @@
       <div class="parallax-1"></div>
 
       <section id="history">
-        <h2 class="text-center m-3">History</h2>
-        <div class="container">
-          <div class="hist1">
+        <h2 class="text-center m-3 marcellus-font fs-1">~ History ~</h2>
+        <div class="container" style="font-size: 1.3vw">
+          <div class="hist1 text-center">
             The pantry has been operating in the Sealy area since 1987. It was organized by 6 women who looked around the community and saw needs for food assistance – especially school-aged children, older people with limited income, people with disabilities and others unable to get jobs. The pantry’s purpose was to serve these people. They started with $60, the help of two local grocery stores and a borrowed garage.
           </div>
           <div class="hist2"></div>
@@ -101,10 +101,10 @@
           <div class="hist4">
             1997
           </div>
-          <div class="hist5">
+          <div class="hist5 text-center">
             In 1997, we moved into our own building on Ward Street. We helped over 1200 families that year, which was a 15% increase over the previous year. The number of people requesting and receiving assistance from the pantry has steadily increased each year since then. Eventually, we had to start thinking about how we might enlarge our building to help with our crowded conditions.
           </div>
-          <div class="hist6">
+          <div class="hist6 text-center">
             Then, 2020 and the Covid pandemic happened. Like so many others, food pantry operations were severely affected. We could not operate out of our Ward Street building. Our quarters were too close to be safe from Covid. We had to begin a drive-through operation. The Houston Food Bank process also changed to mandate food orders only in full pallet quantities instead of cases. In fact, there was a 5-pallet minimum. There was no space to store whole pallets of food at the Ward Street location.
           </div>
           <div class="hist7">
@@ -113,17 +113,39 @@
           <div class="hist8">
             March 2020
           </div>
-          <div class="hist9">
+          <div class="hist9 text-center">
             Our problem was solved in March 2020, when we moved to Lifebridge community church. That church facility is uniquely compatible with our needs. Thanks to the church’s generosity, we are still there, two years later.
           </div>
-
-          <!-- <img src="./images/Ward-street-house.jpeg" class="house me-3">
-          <p class="h4 me-3 ms-3">
-            The pantry has been operating in the Sealy area since 1987.  It was organized by 6 women who looked around the community and saw needs for food assistance  – especially school-aged children, older people with limited income, people with disabilities and others unable to get jobs.  The pantry’s purpose was to serve these people.  They started with $60, the help of two local grocery stores and a borrowed garage.   In 1997, we moved into our own building on Ward Street.  We helped over 1200 families that year, which was a 15% increase over the previous year.  The number of people requesting and receiving assistance from the pantry has steadily increased each year since then.  Eventually, we had to start thinking about how we might enlarge our building to help with our crowded conditions.  Then, 2020 and the Covid pandemic happened.  Like so many others, food pantry operations were severely affected.  We could not operate out of our  Ward Street building.  Our quarters were too close to be safe from Covid.  We had to begin a drive-through operation.  The Houston Food Bank process also changed to mandate food orders only in full pallet quantities instead of cases.  In fact, there was a 5-pallet minimum.  There was no space to store whole pallets of food at the Ward Street location.  Our problem was solved in March 2020, when we moved to Lifebridge community church.  That church facility is uniquely compatible with our needs.  Thanks to the church’s generosity, we are still there, two years later.
-          </p> -->
         </div>
       </section>
-
+      <!-- <section id="pictures">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/images/jars1.jpeg" class="d-block w-100" alt="..." width="500">
+            </div>
+            <div class="carousel-item">
+              <img src="/images/jars2.jpeg" class="d-block w-100" alt="..." width="500">
+            </div>
+            <div class="carousel-item">
+              <img src="/images/jars3.jpeg" class="d-block w-100" alt="..." width="500">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section> -->
       <!-- <div>
         <ul>
           <li class="social">

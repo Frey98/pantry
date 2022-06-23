@@ -27,18 +27,6 @@ body {
 .marcellus-font {
     font-family: "Marcellus SC", serif;
 }
-/* .banner {
-    background-color: rgba(135, 206, 250, 50%);
-    background: linear-gradient(
-        90deg,
-        hsl(37, 92%, 85%),
-        hsl(69, 100%, 85%),
-        hsl(37, 92%, 85%)
-    );
-} */
-/* nav {
-    
-} */
 #mission {
     background-color:snow;
     padding: auto;
@@ -81,9 +69,6 @@ body {
     background-color: snow;
     min-height: 700px;
 }
-/* .house {
-    float: left;
-} */
 .container {
     display: grid;
     grid-template-columns: 1fr 30px 1fr;
@@ -124,9 +109,6 @@ body {
     );
     border-radius: 20px;
 }
-.hist3::before {
-    content: "";
-}
 footer {
     height: 300px;
     background-image: url(./images/backgrounds/vintage-wallpaper.webp);
@@ -146,47 +128,3 @@ footer {
 .google {
     margin: auto;
 }
-/* .menu {
-    position: sticky;
-}
-.menu-p {
-    position: relative;
-} */
-/* .nav {
-    display: inline;
-    list-style-type: none;
-    margin: auto;
-}
-.nav a {
-    color: white;
-    font-size: 20px;
-    background-color: burlywood;
-    padding: 10px 30px 10px 30px;
-    margin: 3px;
-    border-color: white;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 10px;
-    text-decoration: none;
-}
-a:hover {
-    color: burlywood;
-    background-color: white;
-}
-#stats {
-    color: white;
-}
-.social {
-    display: inline;
-    list-style-type: none;
-    margin: 10px 10px 0 0;
-}
-#mission {
-    height: 200px;
-    background-color: tan;
-    text-align: center;
-    position: fixed;
-    right: 300px;
-    bottom: 200px;
-}
- */

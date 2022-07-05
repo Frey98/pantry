@@ -11,9 +11,8 @@ body {
 }
 #title {
     font-family: Lobster, 'Times New Roman', Courier;
-    font-size: 60px;
+    font-size: 5vw;
     color: white;
-    padding-left: 55px;
     text-align: center;
     text-shadow: 1px 1px 2px black, 0 0 10px green, 0 0 5px darkgreen;
     height: 85px;
@@ -37,25 +36,26 @@ body {
     flex-direction: row;
     justify-content: space-around;
     max-height: 400px;
+    
 }
 .event {
     width: 30%;
     text-align: center;
     border: 3px green solid;
     border-radius: 20px;
-    padding: 40px;
-    margin-bottom: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
     background-color: rgb(130, 215, 188);
 }
 .day {
     color: black;
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 500;
     background-color: snow;
     border-radius: 20px;
 }
 .day:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .parallax-1 {
     background-image: url(./images/current/ffa.jpeg);
@@ -74,6 +74,7 @@ body {
     grid-template-columns: 1fr 30px 1fr;
     grid-template-rows: auto;
     gap: 10px;
+    max-width: 75%;
 }
 .hist1, .hist5, .hist6, .hist9 {
     border: 3px groove hsl(235, 91%, 45%);
@@ -117,6 +118,8 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
+    grid-template-areas:
+      "contact google hfb";
     gap: 10px;
     color: white;
     text-shadow: 1px 1px 2px rgb(20, 17, 238);
@@ -124,7 +127,24 @@ footer {
 .contact {
     list-style-type: none;
     margin: auto;
+    grid-area: contact;
 }
 .google {
     margin: auto;
+    grid-area: google;
+}
+.houston-food-bank {
+    margin: auto;
+    grid-area: hfb;
+}
+@media screen and (max-width: 768px) {
+    header {
+      position: relative !important;
+    }
+    footer {
+        grid-template-areas: 
+        "contact"
+        "google"
+        "hfb"; 
+    }
 }

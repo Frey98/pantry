@@ -1,5 +1,7 @@
 *, *::before, *::after{
     box-sizing: border-box;
+    /* max-width: 1750px;
+    text-align: center; */
 }
 header {
     background-image: url(./images/veggies-banner.png);
@@ -15,7 +17,7 @@ body {
     color: white;
     text-align: center;
     text-shadow: 1px 1px 2px black, 0 0 10px green, 0 0 5px darkgreen;
-    height: 85px;
+    height: auto;
 }
 .georgia-font {
     font-family: Georgia, 'Times New Roman', serif;
@@ -28,23 +30,19 @@ body {
 }
 #mission {
     background-color:snow;
-    padding: auto;
     color: darkgreen;
 }
 .events {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around; */
     max-height: 400px;
+    /* margin: 5px !important; */
     
 }
 .event {
-    width: 30%;
-    text-align: center;
     border: 3px green solid;
     border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 20px;
     background-color: rgb(130, 215, 188);
 }
 .day {
@@ -55,7 +53,7 @@ body {
     border-radius: 20px;
 }
 .day:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .parallax-1 {
     background-image: url(./images/current/ffa.jpeg);
@@ -110,41 +108,22 @@ body {
     );
     border-radius: 20px;
 }
+#volunteers {
+    height: 5px;
+    background-color: snow;
+}
 footer {
-    height: 300px;
     background-image: url(./images/backgrounds/vintage-wallpaper.webp);
     background-position: center;
     background-size: cover;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "contact google hfb";
-    gap: 10px;
     color: white;
     text-shadow: 1px 1px 2px rgb(20, 17, 238);
 }
 .contact {
     list-style-type: none;
-    margin: auto;
-    grid-area: contact;
-}
-.google {
-    margin: auto;
-    grid-area: google;
-}
-.houston-food-bank {
-    margin: auto;
-    grid-area: hfb;
 }
 @media screen and (max-width: 768px) {
     header {
       position: relative !important;
-    }
-    footer {
-        grid-template-areas: 
-        "contact"
-        "google"
-        "hfb"; 
     }
 }

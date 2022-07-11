@@ -127,6 +127,7 @@ footer {
       position: relative !important;
     }
     .parallax-1 {
+        background-image: url();
         min-height: 0px;
     }
 }

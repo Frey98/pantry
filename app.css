@@ -126,4 +126,7 @@ footer {
     header {
       position: relative !important;
     }
+    .parallax-1 {
+        min-height: 0px;
+    }
 }
